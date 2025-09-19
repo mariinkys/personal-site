@@ -1,0 +1,92 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+---
+
+<Layout>
+	<div class="flex flex-col gap-5 text-gray-900 dark:text-gray-100">
+		<section class="max-w-2xl m-auto flex flex-col gap-5">
+			<h1 class="text-6xl font-bold text-center">ALEX MARÍN</h1>
+			<h2 class="text-center text-3xl">Software Developer</h2>
+			<p
+				class="w-full text-justify leading-relaxed tracking-normal text-gray-700 dark:text-gray-300"
+			>
+				Hi, I’m a software developer with a background in consulting and
+				hands-on experience in .NET, Blazor, and ASP.NET. These days,
+				I’m pursuing a degree in East Asian Studies while contributing
+				to open-source projects, particularly those built with Rust.
+			</p>
+		</section>
+		<section class="max-w-6xl m-auto flex flex-col gap-5">
+			<h2 class="text-center text-3xl">
+				Personal Projects (Open Source)
+			</h2>
+			<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+				<ProjectCard
+					name="Oboete"
+					description="A simple flashcards application for the COSMIC™ desktop. (Available on Flathub)"
+					language="Rust"
+					repo="https://github.com/mariinkys/oboete"
+					flathub="https://flathub.org/en/apps/dev.mariinkys.Oboete"
+				/>
+
+				<ProjectCard
+					name="StarryDex"
+					description="A Pokédex application for the COSMIC™ desktop. (Available on Flathub)"
+					language="Rust"
+					repo="https://github.com/mariinkys/starrydex"
+					flathub="https://flathub.org/en/apps/dev.mariinkys.StarryDex"
+				/>
+
+				<ProjectCard
+					name="Delphinus Flashcards"
+					description="Software that allows you to easily generate Japanese or Chinese vocabulary flashcards that can be imported into Quizlet, StudySmarter(Vaia) or Anki."
+					language="Rust / Go"
+					repo="https://github.com/mariinkys/delphinus_flashcards"
+					demo="https://delphinus.mariinkys.dev/"
+				/>
+
+				<ProjectCard
+					name="Clockode"
+					description="Minimal TOTP client made with Iced. (Available on Flathub)"
+					language="Rust"
+					repo="https://github.com/mariinkys/clockode"
+					flathub="https://flathub.org/en/apps/dev.mariinkys.Clockode"
+				/>
+
+				<ProjectCard
+					name="Cocookies"
+					description="A self-hostable recipe manager made with Leptos."
+					language="Rust"
+					repo="https://github.com/mariinkys/delphinus_flashcards"
+				/>
+
+				<ProjectCard
+					name="RPM OSTree Management GUI"
+					description="A GUI to manage RPM-OSTree Systems (Such as Silverblue or Kinoite)."
+					language="Rust"
+					repo="https://github.com/mariinkys/rot-management-gui"
+				/>
+			</div>
+			<div class="w-full">
+				<p
+					class="w-full text-center text-gray-600 dark:text-gray-400 mb-0"
+				>
+					I also have some other closed-source projects that I can't
+					showcase here.
+				</p>
+				<div class="w-full flex gap-2 justify-center">
+					<p class="text-gray-600 dark:text-gray-400">
+						Remember to check my:
+					</p>
+					<a
+						href="https://github.com/mariinkys"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="text-blue-600">GitHub</a
+					>
+				</div>
+			</div>
+		</section>
+	</div>
+</Layout>

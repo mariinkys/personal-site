@@ -1,0 +1,162 @@
+---
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Alex Marín</title>
+		<meta name="description" content="alex marín personal page" />
+		<meta
+			name="keywords"
+			content="Alex Marín, personal website, portfolio, developer"
+		/>
+		<meta name="author" content="Alex Marín" />
+		<meta name="robots" content="index, follow" />
+
+		<meta property="og:title" content="Alex Marín" />
+		<meta property="og:description" content="Alex Marín personal page" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://mariinkys.dev" />
+
+		<link rel="canonical" href="https://mariinkys.dev" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="/site.webmanifest" />
+
+		<script is:inline type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Person",
+				"name": "Alex Marín",
+				"url": "https://mariinkys.dev",
+				"sameAs": ["https://www.linkedin.com/in/alexmarinliebana/"]
+			}
+		</script>
+	</head>
+	<body
+		class="bg-fixed bg-gradient-to-br
+         from-blue-50 via-white to-indigo-100
+    	dark:from-gray-950 dark:via-gray-900 dark:to-gray-800
+         text-gray-900 dark:text-gray-100
+         transition-colors duration-300"
+	>
+		<Header />
+		<div class="p-4">
+			<slot />
+		</div>
+	</body>
+</html>
+
+<style>
+	html,
+	body {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+		font-family: "Montserrat", sans-serif;
+		font-optical-sizing: auto;
+		font-style: normal;
+	}
+
+	/* montserrat-100 - latin */
+	@font-face {
+		font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+		font-family: "Montserrat";
+		font-style: normal;
+		font-weight: 100;
+		src: url("../fonts/montserrat-v31-latin-100.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	}
+
+	/* montserrat-200 - latin */
+	@font-face {
+		font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+		font-family: "Montserrat";
+		font-style: normal;
+		font-weight: 200;
+		src: url("../fonts/montserrat-v31-latin-200.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	}
+
+	/* montserrat-300 - latin */
+	@font-face {
+		font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+		font-family: "Montserrat";
+		font-style: normal;
+		font-weight: 300;
+		src: url("../fonts/montserrat-v31-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	}
+
+	/* montserrat-regular - latin */
+	@font-face {
+		font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+		font-family: "Montserrat";
+		font-style: normal;
+		font-weight: 400;
+		src: url("../fonts/montserrat-v31-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	}
+
+	/* montserrat-500 - latin */
+	@font-face {
+		font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+		font-family: "Montserrat";
+		font-style: normal;
+		font-weight: 500;
+		src: url("../fonts/montserrat-v31-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	}
+
+	/* montserrat-600 - latin */
+	@font-face {
+		font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+		font-family: "Montserrat";
+		font-style: normal;
+		font-weight: 600;
+		src: url("../fonts/montserrat-v31-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	}
+
+	/* montserrat-700 - latin */
+	@font-face {
+		font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+		font-family: "Montserrat";
+		font-style: normal;
+		font-weight: 700;
+		src: url("../fonts/montserrat-v31-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	}
+
+	/* montserrat-800 - latin */
+	@font-face {
+		font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+		font-family: "Montserrat";
+		font-style: normal;
+		font-weight: 800;
+		src: url("../fonts/montserrat-v31-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	}
+
+	/* montserrat-900 - latin */
+	@font-face {
+		font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+		font-family: "Montserrat";
+		font-style: normal;
+		font-weight: 900;
+		src: url("../fonts/montserrat-v31-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+	}
+</style>
