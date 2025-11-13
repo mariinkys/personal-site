@@ -1,14 +1,24 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import profileImage from "../assets/me.webp";
 ---
 
 <Layout>
     <div class="max-w-4xl mx-auto p-6">
-        <header class="text-center mb-12">
-            <h1 class="text-5xl font-bold">Alex Marín</h1>
-            <span class="block text-xl text-gray-600 dark:text-gray-400"
-                >Curriculum Vitae</span
-            >
+        <header
+            class="text-center mb-12 lg:flex lg:items-center lg:justify-between lg:text-left"
+        >
+            <div class="lg:flex-1">
+                <h1 class="text-5xl font-bold">Alex Marín</h1>
+                <span class="block text-xl text-gray-600 dark:text-gray-400"
+                    >Curriculum Vitae</span
+                >
+            </div>
+            <img
+                src={profileImage.src}
+                alt="Alex Marín"
+                class="w-52 h-52 rounded-full mx-auto mt-6 mb-6 object-cover lg:mt-0 lg:mb-0 lg:mx-0"
+            />
         </header>
 
         <!-- Contact -->
