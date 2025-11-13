@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import profileImage from "../assets/me.webp";
+import { Image } from "astro:assets";
 ---
 
 <Layout>
@@ -14,10 +15,11 @@ import profileImage from "../assets/me.webp";
                     >Curriculum Vitae</span
                 >
             </div>
-            <img
-                src={profileImage.src}
+            <Image
+                src={profileImage}
                 alt="Alex Marín"
                 class="w-52 h-52 rounded-full mx-auto mt-6 mb-6 object-cover lg:mt-0 lg:mb-0 lg:mx-0"
+                loading="lazy"
             />
         </header>
 
