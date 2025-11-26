@@ -62,12 +62,17 @@ import Header from "../components/Header.astro";
 		</script>
 	</head>
 	<body
-		class="bg-fixed bg-gradient-to-br
+		class="bg-fixed bg-linear-to-br
          from-blue-50 via-white to-indigo-100
     	dark:from-gray-950 dark:via-gray-900 dark:to-gray-800
          text-gray-900 dark:text-gray-100
          transition-colors duration-300"
 	>
+		<a
+			rel="me"
+			href="https://mastodon.social/@mariinkys"
+			style="display: none;">Mastodon</a
+		>
 		<Header />
 		<div class="p-4">
 			<slot />
