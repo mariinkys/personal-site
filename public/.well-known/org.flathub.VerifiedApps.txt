@@ -1,1 +1,2 @@
 # File for verifying apps on Flathub
+27247480-2a12-4062-bc83-4671275ad9f1
