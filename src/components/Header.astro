@@ -29,6 +29,16 @@ const currentPath = Astro.url.pathname;
             >
                 Resumé
             </a>
+            <a
+                href="/blog/"
+                class={`font-medium transition-colors pb-1 border-b-2 ${
+                    currentPath.startsWith("/blog")
+                        ? "text-blue-600 border-blue-600 dark:text-blue-400 dark:border-blue-400"
+                        : "text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200 border-transparent hover:border-gray-300 dark:hover:border-gray-600"
+                }`}
+            >
+                Blog
+            </a>
         </div>
 
         <div class="flex gap-2 justify-center md:justify-end">
