@@ -6,14 +6,40 @@ import { Image } from "astro:assets";
 
 <Layout>
     <div class="max-w-4xl mx-auto p-6">
-        <header
-            class="text-center mb-12 lg:flex lg:items-center lg:justify-between lg:text-left"
-        >
+        <header class="text-center mb-12 lg:flex lg:items-center lg:justify-between lg:text-left">
             <div class="lg:flex-1">
                 <h1 class="text-5xl font-bold">Alex Marín</h1>
-                <span class="block text-xl text-gray-600 dark:text-gray-400"
-                    >Curriculum Vitae</span
-                >
+                <span class="block text-xl text-gray-600 dark:text-gray-400">Curriculum Vitae</span>
+
+                <div class="flex gap-2 mt-4 justify-center lg:justify-start flex-wrap">
+                    <a href="/cv/cv_en.pdf" download="Alex_Marin_CV_EN.pdf"
+                            class="inline-flex items-center gap-1.5 px-4 py-2 text-sm font-medium rounded-md border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                <polyline points="7 10 12 15 17 10"/>
+                                <line x1="12" y1="15" x2="12" y2="3"/>
+                            </svg>
+                            English
+                        </a>
+                        <a href="/cv/cv_es.pdf" download="Alex_Marin_CV_ES.pdf"
+                            class="inline-flex items-center gap-1.5 px-4 py-2 text-sm font-medium rounded-md border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                <polyline points="7 10 12 15 17 10"/>
+                                <line x1="12" y1="15" x2="12" y2="3"/>
+                            </svg>
+                            Español
+                        </a>
+                        <a href="/cv/cv_ja.pdf" download="Alex_Marin_CV_JA.pdf"
+                            class="inline-flex items-center gap-1.5 px-4 py-2 text-sm font-medium rounded-md border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                <polyline points="7 10 12 15 17 10"/>
+                                <line x1="12" y1="15" x2="12" y2="3"/>
+                            </svg>
+                            日本語
+                        </a>
+                </div>
             </div>
             <Image
                 src={profileImage}
