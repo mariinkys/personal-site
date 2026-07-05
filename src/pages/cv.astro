@@ -5,275 +5,339 @@ import { Image } from "astro:assets";
 ---
 
 <Layout>
-    <div class="max-w-4xl mx-auto p-6">
-        <header class="text-center mb-12 lg:flex lg:items-center lg:justify-between lg:text-left">
-            <div class="lg:flex-1">
-                <h1 class="text-5xl font-bold">Alex Marín</h1>
-                <span class="block text-xl text-gray-600 dark:text-gray-400">Curriculum Vitae</span>
+  <div class="max-w-4xl mx-auto p-6">
+    <header
+      class="text-center mb-12 lg:flex lg:items-center lg:justify-between lg:text-left"
+    >
+      <div class="lg:flex-1">
+        <h1 class="text-5xl font-bold">Alex Marín</h1>
+        <span class="block text-xl text-gray-600 dark:text-gray-400"
+          >Curriculum Vitae</span
+        >
 
-                <div class="flex gap-2 mt-4 justify-center lg:justify-start flex-wrap">
-                    <a href="/cv/cv_en.pdf" download="Alex_Marin_CV_EN.pdf"
-                            class="inline-flex items-center gap-1.5 px-4 py-2 text-sm font-medium rounded-md border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                                <polyline points="7 10 12 15 17 10"/>
-                                <line x1="12" y1="15" x2="12" y2="3"/>
-                            </svg>
-                            English
-                        </a>
-                        <a href="/cv/cv_es.pdf" download="Alex_Marin_CV_ES.pdf"
-                            class="inline-flex items-center gap-1.5 px-4 py-2 text-sm font-medium rounded-md border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                                <polyline points="7 10 12 15 17 10"/>
-                                <line x1="12" y1="15" x2="12" y2="3"/>
-                            </svg>
-                            Español
-                        </a>
-                        <a href="/cv/cv_ja.pdf" download="Alex_Marin_CV_JA.pdf"
-                            class="inline-flex items-center gap-1.5 px-4 py-2 text-sm font-medium rounded-md border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                                <polyline points="7 10 12 15 17 10"/>
-                                <line x1="12" y1="15" x2="12" y2="3"/>
-                            </svg>
-                            日本語
-                        </a>
-                </div>
-            </div>
-            <Image
-                src={profileImage}
-                alt="Alex Marín"
-                class="w-52 h-52 rounded-full mx-auto mt-6 mb-6 object-cover lg:mt-0 lg:mb-0 lg:mx-0"
-                loading="lazy"
-            />
-        </header>
-
-        <!-- Contact -->
-        <section class="mb-12">
-            <h2
-                class="text-2xl font-semibold mb-4 border-b pb-2 border-gray-300 dark:border-gray-700"
+        <div class="flex gap-2 mt-4 justify-center lg:justify-start flex-wrap">
+          <a
+            href="/cv/cv_en.pdf"
+            download="Alex_Marin_CV_EN.pdf"
+            class="inline-flex items-center gap-1.5 px-4 py-2 text-sm font-medium rounded-md border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-4 h-4"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
             >
-                Contact
-            </h2>
-            <div class="space-y-2 text-gray-800 dark:text-gray-200">
-                <div>
-                    <span class="font-semibold">Email:</span>
-                    <a
-                        href="mailto:kysdev.owjga@aleeas.com"
-                        class="text-blue-600 dark:text-blue-400"
-                        >kysdev.owjga@aleeas.com</a
-                    >
-                </div>
-            </div>
-            <div class="space-y-2 text-gray-800 dark:text-gray-200">
-                <div>
-                    <span class="font-semibold">GitHub:</span>
-                    <a
-                        href="https://www.github.com/mariinkys"
-                        class="text-blue-600 dark:text-blue-400"
-                        target="_blank">@mariinkys</a
-                    >
-                </div>
-            </div>
-            <div class="space-y-2 text-gray-800 dark:text-gray-200">
-                <div>
-                    <span class="font-semibold">Location:</span>
-                    <span>Barcelona, Spain</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Education -->
-        <section class="mb-12">
-            <h2
-                class="text-2xl font-semibold mb-4 border-b pb-2 border-gray-300 dark:border-gray-700"
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            English
+          </a>
+          <a
+            href="/cv/cv_es.pdf"
+            download="Alex_Marin_CV_ES.pdf"
+            class="inline-flex items-center gap-1.5 px-4 py-2 text-sm font-medium rounded-md border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-4 h-4"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
             >
-                Education
-            </h2>
-            <div class="space-y-6 text-gray-800 dark:text-gray-200">
-                <div>
-                    <div class="font-semibold text-lg">
-                        Institut Bernat el Ferrer
-                    </div>
-                    <div class="text-sm text-gray-600 dark:text-gray-400">
-                        2017 - 2019
-                    </div>
-                    <div>
-                        Intermediate Vocational Diploma in Computer Systems and
-                        Networks
-                    </div>
-                </div>
-                <div>
-                    <div class="font-semibold text-lg">
-                        Institut Bernat el Ferrer
-                    </div>
-                    <div class="text-sm text-gray-600 dark:text-gray-400">
-                        2019 - 2021
-                    </div>
-                    <div>
-                        Advanced Vocational Diploma in Web Application
-                        Development
-                    </div>
-                </div>
-                <div>
-                    <div class="font-semibold text-lg">
-                        Universitat Autònoma de Barcelona
-                    </div>
-                    <div class="text-sm text-gray-600 dark:text-gray-400">
-                        2022 - Present
-                    </div>
-                    <div>East Asian Studies (Chinese & Japanese)</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Professional Experience -->
-        <section class="mb-12">
-            <h2
-                class="text-2xl font-semibold mb-4 border-b pb-2 border-gray-300 dark:border-gray-700"
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Español
+          </a>
+          <a
+            href="/cv/cv_ja.pdf"
+            download="Alex_Marin_CV_JA.pdf"
+            class="inline-flex items-center gap-1.5 px-4 py-2 text-sm font-medium rounded-md border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-4 h-4"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
             >
-                Professional Experience
-            </h2>
-            <div class="space-y-8 text-gray-800 dark:text-gray-200">
-                <div>
-                    <div class="font-semibold text-lg">Hotel Casa Peix</div>
-                    <div class="text-sm text-gray-600 dark:text-gray-400">
-                        Seasonal (July-August) 2017-2021, 2023-2025
-                    </div>
-                    <div>
-                        Waiter. Provided excellent customer service as a waiter
-                        in a high-volume seasonal hotel. Developed internal
-                        tooling, improving workflow efficiency.
-                    </div>
-                </div>
-                <div>
-                    <div class="font-semibold text-lg">BEEP</div>
-                    <div class="text-sm text-gray-600 dark:text-gray-400">
-                        September 2018 - March 2019
-                    </div>
-                    <div>
-                        IT Technician (Internship). Performed computer repairs,
-                        maintenance, and diagnostics.
-                    </div>
-                </div>
-                <div>
-                    <div class="font-semibold text-lg">
-                        Ajuntament de Molins de Rei
-                    </div>
-                    <div class="text-sm text-gray-600 dark:text-gray-400">
-                        October 2020 - June 2012
-                    </div>
-                    <div>
-                        Web Developer (Internship). Developed internal
-                        applications for the city council using WordPress, Vue,
-                        and Laravel.
-                    </div>
-                </div>
-                <div>
-                    <div class="font-semibold text-lg">Asolcon</div>
-                    <div class="text-sm text-gray-600 dark:text-gray-400">
-                        January 2022 - November 2022
-                    </div>
-                    <div>
-                        Software Developer. Built business management
-                        applications using .NET technologies like Blazor and
-                        Entity Framework, handling both frontend and backend
-                        development.
-                    </div>
-                </div>
-                <div>
-                    <div class="font-semibold text-lg">Freelancer</div>
-                    <div class="text-sm text-gray-600 dark:text-gray-400">
-                        July 2023 - April 2026
-                    </div>
-                    <div>
-                        Developed business management applications and
-                        automation tools for companies, using Rust, .NET, Java, Vue...
-                    </div>
-                </div>
-                <div>
-                    <div class="font-semibold text-lg">Indra</div>
-                    <div class="text-sm text-gray-600 dark:text-gray-400">
-                        June 2026 - Present
-                    </div>
-                    <div>
-                        Senior Vue Developer.
-                    </div>
-                </div>
-            </div>
-        </section>
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            日本語
+          </a>
+        </div>
+      </div>
+      <Image
+        src={profileImage}
+        alt="Alex Marín"
+        class="w-52 h-52 rounded-full mx-auto mt-6 mb-6 object-cover lg:mt-0 lg:mb-0 lg:mx-0"
+        loading="lazy"
+      />
+    </header>
 
-        <!-- Languages -->
-        <section class="mb-12">
-            <h2
-                class="text-2xl font-semibold mb-4 border-b pb-2 border-gray-300 dark:border-gray-700"
-            >
-                Languages
-            </h2>
-            <div class="space-y-2 text-gray-800 dark:text-gray-200">
-                <div class="flex gap-1">
-                    <span class="font-semibold">Spanish:</span>
-                    <p>Native</p>
-                </div>
-                <div class="flex gap-1">
-                    <span class="font-semibold">Catalan:</span>
-                    <p>Native</p>
-                </div>
-                <div class="flex gap-1">
-                    <span class="font-semibold">English:</span>
-                    <p>Professional Proficiency (C1)</p>
-                </div>
-                <div class="flex gap-1">
-                    <span class="font-semibold">Japanese:</span>
-                    <p>Intermediate (B1-B2)</p>
-                </div>
-                <div class="flex gap-1">
-                    <span class="font-semibold">Chinese:</span>
-                    <p>Elementary/Intermediate (A2-B1)</p>
-                </div>
-            </div>
-        </section>
+    <!-- Contact -->
+    <section class="mb-12">
+      <h2
+        class="text-2xl font-semibold mb-4 border-b pb-2 border-gray-300 dark:border-gray-700"
+      >
+        Contact
+      </h2>
+      <div class="space-y-2 text-gray-800 dark:text-gray-200">
+        <div>
+          <span class="font-semibold">Email:</span>
+          <a
+            href="mailto:kysdev.owjga@aleeas.com"
+            class="text-blue-600 dark:text-blue-400">kysdev.owjga@aleeas.com</a
+          >
+        </div>
+      </div>
+      <div class="space-y-2 text-gray-800 dark:text-gray-200">
+        <div>
+          <span class="font-semibold">GitHub:</span>
+          <a
+            href="https://www.github.com/mariinkys"
+            class="text-blue-600 dark:text-blue-400"
+            target="_blank">@mariinkys</a
+          >
+        </div>
+      </div>
+      <div class="space-y-2 text-gray-800 dark:text-gray-200">
+        <div>
+          <span class="font-semibold">Location:</span>
+          <span>Barcelona, Spain</span>
+        </div>
+      </div>
+    </section>
 
-        <!-- Other -->
-        <section class="mb-12">
-            <h2
-                class="text-2xl font-semibold mb-4 border-b pb-2 border-gray-300 dark:border-gray-700"
+    <!-- Education -->
+    <section class="mb-12">
+      <h2
+        class="text-2xl font-semibold mb-4 border-b pb-2 border-gray-300 dark:border-gray-700"
+      >
+        Education
+      </h2>
+      <div class="space-y-6 text-gray-800 dark:text-gray-200">
+        <div>
+          <div class="font-semibold text-lg">Institut Bernat el Ferrer</div>
+          <div class="text-sm text-gray-600 dark:text-gray-400">
+            2017 - 2019
+          </div>
+          <div>
+            Intermediate Vocational Diploma in Computer Systems and Networks
+          </div>
+        </div>
+        <div>
+          <div class="font-semibold text-lg">Institut Bernat el Ferrer</div>
+          <div class="text-sm text-gray-600 dark:text-gray-400">
+            2019 - 2021
+          </div>
+          <div>Advanced Vocational Diploma in Web Application Development</div>
+        </div>
+        <div>
+          <div class="font-semibold text-lg">
+            Universitat Autònoma de Barcelona
+          </div>
+          <div class="text-sm text-gray-600 dark:text-gray-400">
+            2022 - Present
+          </div>
+          <div>East Asian Studies (Chinese & Japanese)</div>
+
+          <!-- TFG -->
+          <div
+            class="mt-3 pl-3 border-l-2 border-gray-300 dark:border-gray-700"
+          >
+            <div
+              class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2"
             >
-                Other
-            </h2>
-            <div class="space-y-8 text-gray-800 dark:text-gray-200">
-                <div>
-                    <div class="font-semibold text-lg">
-                        Hackathon HackEPS 9th Edition
-                    </div>
-                    <div class="text-sm text-gray-600 dark:text-gray-400">
-                        November 2025
-                    </div>
-                    <div>
-                        Second place in the hackathon for the challenge proposed
-                        by BonÀrea. The code interacts with a Siemens PLC using
-                        S7 and OPC protocols to solve various proposed
-                        challenges.
-                    </div>
-                </div>
-                <div>
-                    <div class="font-semibold text-lg">
-                        Hackathon HackUPC 12th Edition
-                    </div>
-                    <div class="text-sm text-gray-600 dark:text-gray-400">
-                        April 2026
-                    </div>
-                    <div>
-                        Solved the challenge proposed by InditexTech. Developed
-                        optimization algorithms for automated warehouse systems,
-                        handling real-time box allocation and retrieval in a 3D
-                        grid. Focused on minimizing shuttle travel time,
-                        managing constrained movements, and improving throughput
-                        via intelligent palletization strategies.
-                    </div>
-                </div>
+              <div class="font-medium">
+                Final Degree Thesis (TFG)
+                <span
+                  class="text-sm font-normal text-gray-600 dark:text-gray-400"
+                  > Grade: 10/10</span
+                >
+              </div>
+              <a
+                href="/tfg/TFG2025-26_AlexMarinLiebana.pdf"
+                download="Alex_Marin_TFG.pdf"
+                class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium rounded-md border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors w-fit"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-3.5 h-3.5"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download
+              </a>
             </div>
-        </section>
-    </div>
+            <div class="text-sm italic mt-1">
+              "La formación de la alianza comunista y su ruptura. Las relaciones
+              de la Unión Soviética y República Popular de China (1950-1961)"
+            </div>
+            <div class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+              Written in Spanish.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section class="mb-12">
+      <h2
+        class="text-2xl font-semibold mb-4 border-b pb-2 border-gray-300 dark:border-gray-700"
+      >
+        Professional Experience
+      </h2>
+      <div class="space-y-8 text-gray-800 dark:text-gray-200">
+        <div>
+          <div class="font-semibold text-lg">Hotel Casa Peix</div>
+          <div class="text-sm text-gray-600 dark:text-gray-400">
+            Seasonal (July-August) 2017-2021, 2023-2025
+          </div>
+          <div class="text-justify">
+            Waiter. Provided excellent customer service as a waiter in a
+            high-volume seasonal hotel. Developed internal tooling, improving
+            workflow efficiency.
+          </div>
+        </div>
+        <div>
+          <div class="font-semibold text-lg">BEEP</div>
+          <div class="text-sm text-gray-600 dark:text-gray-400">
+            September 2018 - March 2019
+          </div>
+          <div class="text-justify">
+            IT Technician (Internship). Performed computer repairs, maintenance,
+            and diagnostics.
+          </div>
+        </div>
+        <div>
+          <div class="font-semibold text-lg">Ajuntament de Molins de Rei</div>
+          <div class="text-sm text-gray-600 dark:text-gray-400">
+            October 2020 - June 2012
+          </div>
+          <div class="text-justify">
+            Web Developer (Internship). Developed internal applications for the
+            city council using WordPress, Vue, and Laravel.
+          </div>
+        </div>
+        <div>
+          <div class="font-semibold text-lg">Asolcon</div>
+          <div class="text-sm text-gray-600 dark:text-gray-400">
+            January 2022 - November 2022
+          </div>
+          <div class="text-justify">
+            Software Developer. Built business management applications using
+            .NET technologies like Blazor and Entity Framework, handling both
+            frontend and backend development.
+          </div>
+        </div>
+        <div>
+          <div class="font-semibold text-lg">Freelancer</div>
+          <div class="text-sm text-gray-600 dark:text-gray-400">
+            July 2023 - April 2026
+          </div>
+          <div class="text-justify">
+            Developed business management applications and automation tools for
+            companies, using Rust, .NET, Java, Vue...
+          </div>
+        </div>
+        <div>
+          <div class="font-semibold text-lg">Indra</div>
+          <div class="text-sm text-gray-600 dark:text-gray-400">
+            June 2026 - Present
+          </div>
+          <div class="text-justify">Senior Vue Developer.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Languages -->
+    <section class="mb-12">
+      <h2
+        class="text-2xl font-semibold mb-4 border-b pb-2 border-gray-300 dark:border-gray-700"
+      >
+        Languages
+      </h2>
+      <div class="space-y-2 text-gray-800 dark:text-gray-200">
+        <div class="flex gap-1">
+          <span class="font-semibold">Spanish:</span>
+          <p>Native</p>
+        </div>
+        <div class="flex gap-1">
+          <span class="font-semibold">Catalan:</span>
+          <p>Native</p>
+        </div>
+        <div class="flex gap-1">
+          <span class="font-semibold">English:</span>
+          <p>Professional Proficiency (C1)</p>
+        </div>
+        <div class="flex gap-1">
+          <span class="font-semibold">Japanese:</span>
+          <p>Intermediate (B1-B2)</p>
+        </div>
+        <div class="flex gap-1">
+          <span class="font-semibold">Chinese:</span>
+          <p>Elementary/Intermediate (A2-B1)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Other -->
+    <section class="mb-12">
+      <h2
+        class="text-2xl font-semibold mb-4 border-b pb-2 border-gray-300 dark:border-gray-700"
+      >
+        Other
+      </h2>
+      <div class="space-y-8 text-gray-800 dark:text-gray-200">
+        <div>
+          <div class="font-semibold text-lg">Hackathon HackEPS 9th Edition</div>
+          <div class="text-sm text-gray-600 dark:text-gray-400">
+            November 2025
+          </div>
+          <div class="text-justify">
+            Second place in the hackathon for the challenge proposed by BonÀrea.
+            The code interacts with a Siemens PLC using S7 and OPC protocols to
+            solve various proposed challenges.
+          </div>
+        </div>
+        <div>
+          <div class="font-semibold text-lg">
+            Hackathon HackUPC 12th Edition
+          </div>
+          <div class="text-sm text-gray-600 dark:text-gray-400">April 2026</div>
+          <div class="text-justify">
+            Solved the challenge proposed by InditexTech. Developed optimization
+            algorithms for automated warehouse systems, handling real-time box
+            allocation and retrieval in a 3D grid. Focused on minimizing shuttle
+            travel time, managing constrained movements, and improving
+            throughput via intelligent palletization strategies.
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </Layout>
